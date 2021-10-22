@@ -2,23 +2,23 @@
 #include <windows.h>
 #include <locale.h>
 
-void convertion(int n)
+void convertion( int n )
 {
-	if (n >= 2)
-	{
-		convertion(n / 2);
-	}
-	printf("%d", n % 2);
+if ( n >= 2 )
+{
+convertion( n/2 );
+}
+printf("%d", n % 2);
 }
 
 
-int main(void) {
-	setlocale(LC_ALL, "Russian");
-	int n;
-	printf("Введите десятичное число: \n");
-	scanf("%d", &n);
-	printf("(Десятичная Cистема счисления): %d = ", n);
-	convertion(n);
-	printf(" (Двоичная система счисления)\n");
-	return 0;
+int main (void) {
+setlocale(LC_ALL, "Russian");
+int n;
+printf("Р’РІРµРґРёС‚Рµ РґРµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ: \n");
+scanf("%d", &n);
+printf("(Р”РµСЃСЏС‚РёС‡РЅР°СЏ CРёСЃС‚РµРјР° СЃС‡РёСЃР»РµРЅРёСЏ): %d = ", n);
+convertion( n );
+printf(" (Р”РІРѕРёС‡РЅР°СЏ СЃРёСЃС‚РµРјР° СЃС‡РёСЃР»РµРЅРёСЏ)\n");
+return 0;
 }

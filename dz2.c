@@ -28,19 +28,19 @@ int main() {
 
         for (int j = 0; j < n; j++) {
 
-            if ((i == j) && (arr[i * n + j] != 0)) {    //ïðîâåðêà äèàãîíàëè
+            if ((i == j) && (arr[i * n + j] != 0)) {    //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð´Ð¸Ð°Ð³Ð¾Ð½Ð°Ð»Ð¸
                 prov = true;
             }
 
-            if (arr[i * n + j] != arr[j * n + i]) {     //ïðîâåðêà ñèììåòðè÷íîñòè îòíîñèòåëüíî äèàãîíàëè
+            if (arr[i * n + j] != arr[j * n + i]) {     //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¸Ð¼Ð¼ÐµÑ‚Ñ€Ð¸Ñ‡Ð½Ð¾ÑÑ‚Ð¸ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð´Ð¸Ð°Ð³Ð¾Ð½Ð°Ð»Ð¸
                 prov = true;
             }
 
-            if ((arr[i * n + j] != 0) && (arr[i * n + j] != 1)) {      //ïðîâåðêà ëèáî îòñóòâèÿ ðåáðà ìåæäó âåðøèíàìè, ëèáî íàëè÷èÿ ëèøü 1 òàêîâîé
+            if ((arr[i * n + j] != 0) && (arr[i * n + j] != 1)) {      //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð»Ð¸Ð±Ð¾ Ð¾Ñ‚ÑÑƒÑ‚Ð²Ð¸Ñ Ñ€ÐµÐ±Ñ€Ð° Ð¼ÐµÐ¶Ð´Ñƒ Ð²ÐµÑ€ÑˆÐ¸Ð½Ð°Ð¼Ð¸, Ð»Ð¸Ð±Ð¾ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ñ Ð»Ð¸ÑˆÑŒ 1 Ñ‚Ð°ÐºÐ¾Ð²Ð¾Ð¹
                 prov = true;
             }
 
-            if (arr[i * n + j] == 1) {      //ïðîâåðêà òîãî, ÷òî èç êàæäîé âåðøèíû âûõîäèò ðîâíî 2 ðåáðà
+            if (arr[i * n + j] == 1) {      //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ‚Ð¾Ð³Ð¾, Ñ‡Ñ‚Ð¾ Ð¸Ð· ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð²ÐµÑ€ÑˆÐ¸Ð½Ñ‹ Ð²Ñ‹Ñ…Ð¾Ð´Ð¸Ñ‚ Ñ€Ð¾Ð²Ð½Ð¾ 2 Ñ€ÐµÐ±Ñ€Ð°
                 k++;
             }
 
@@ -55,7 +55,7 @@ int main() {
 
         for (int j = 0; j < n; j++) {
 
-            if ((arr[k * n + j] == 1) && (j != t) && (flag == false)) {     //ïðîâåðêà îáõîäîì
+            if ((arr[k * n + j] == 1) && (j != t) && (flag == false)) {     //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¾Ð±Ñ…Ð¾Ð´Ð¾Ð¼
                 t = k;
                 k = j;
                 flag = true;
@@ -77,7 +77,7 @@ int main() {
     else
         printf("not a simple cycle");
 
- // âèçóàëèçàöèÿ //
+ // Ð²Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ //
 
     FILE* file;
 
@@ -113,7 +113,7 @@ int main() {
         
     fprintf(file, "}");
     fclose(file);
-    system("dot C:\\Users\\User\\Desktop\\Àëãîðèòìû\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.txt -Tbmp -o Dot_file.bmp");
-    system("rundll32 \"%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen C:\\Users\\User\\Desktop\\Àëãîðèòìû\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.bmp");
+    system("dot C:\\Users\\User\\Desktop\\ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼Ñ‹\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.txt -Tbmp -o Dot_file.bmp");
+    system("rundll32 \"%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen C:\\Users\\User\\Desktop\\ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼Ñ‹\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.bmp");
     return (0);
 }

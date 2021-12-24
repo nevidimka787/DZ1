@@ -73,10 +73,10 @@ int main() {
         }
     }
     if (prov == false) {
-        printf("Простой цикл");                                             //При невыполнении каких-либо условий выше выводим на экран "Непростой цикл" 
+        printf("Простой цикл\n");                                             //При невыполнении каких-либо условий выше выводим на экран "Непростой цикл" 
     }
     else
-        printf("Непростой цикл");
+        printf("Непростой цикл\n");
 
  // визуализация //
 
@@ -114,7 +114,7 @@ int main() {
         
     fprintf(file, "}");
     fclose(file);
-    system("dot C:\\Users\\User\\Desktop\\Алгоритмы\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.txt -Tbmp -o Dot_file.bmp");
-    system("rundll32 \"%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen C:\\Users\\User\\Desktop\\Алгоритмы\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.bmp");
+    system("dot Dot_file.txt -Tbmp -o Dot_file.bmp");
+    //system("rundll32 \"%ProgramFiles%\\Windows Photo Viewer\\PhotoViewer.dll\", ImageView_Fullscreen C:\\Users\\User\\Desktop\\Алгоритмы\\MyHomework2V2\\Homework2\\Homework2\\Dot_file.bmp");
     return (0);
 }
